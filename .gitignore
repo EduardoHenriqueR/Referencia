@@ -1,0 +1,10 @@
+[Oo]bj/
+[Bb]in/
+[Ll]og/
+[Ll]og.txt
+*.log
+*.user
+*.suo
+*.cache
+*.dll
+*.exe
