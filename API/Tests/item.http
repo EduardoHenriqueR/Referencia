@@ -30,3 +30,6 @@ PUT https://localhost:7126/api/item/atualizar-durabilidade/1
 
 ### Deletar 
 DELETE https://localhost:7126/api/item/deletar/2
+
+### Buscar
+GET https://localhost:7126/api/item/buscar/1

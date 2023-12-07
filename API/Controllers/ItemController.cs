@@ -131,7 +131,22 @@ public class ItemController : ControllerBase
         {
             return NotFound();
         }
-    }    
+    } 
+
+    [HttpGet]
+    [Route("buscar/{id}")]
+    public IActionResult Bucar([FromRoute] int id)
+    {
+        Item? itemCadastrado = _ctx.Items.FirstOrDefault(x => x.ItemId == id);
+        if(itemCadastrado != null)
+        {
+            return Ok(itemCadastrado);
+        }
+        else
+        {
+            return NotFound();
+        }
+    }
         
       
 }
